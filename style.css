@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Infant:ital,wght@0,1;0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,1;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+
+body{
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #222;
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+.day-info{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.horloge{
+    width: 400px;
+    height: 400px;
+    /* margin: auto; */
+    position: relative;
+    border-radius: 50%;
+    box-shadow: 0 0 15px #ccc;
+    top: 20px;
+    background: url('assets/style2.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.horloge .circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 44.5%;
+    left: 45%;
+    z-index: 60;
+    background-color: #125;
+}
+
+.calendar .affiche{
+    color: white;
+    height: 40px;
+    margin: auto;
+    display: flex;
+}
+.calendar .affiche span{
+    width: 180px;
+    font-size: 30px;
+    display: inline-block;
+    text-align: center;
+}
+.calendar .affiche .Jour{
+    border-left: 1px solid white;
+}
+.calendar .affiche .Mois{
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    width: 100px;
+}
+
+.calendar .affiche .Annee{
+    width: 120px;
+}
+
+img{
+    position: absolute;
+    transform-origin: 50%  100%;
+}
+
+img.trotteuse{
+    height: 150px;
+    top: 12%;
+    left: 49%;
+    z-index: 40;
+}
+
+img.heure{   
+    height: 100px;
+    top: 25%;
+    left: 49%;
+    z-index: 50;
+}
+img.minute{
+    height: 130px;
+    top: 17%;
+    left: 49%;
+    z-index: 30;
+}
+#ecriture{
+    position: relative;
+    top: 80px;
+    height: 60px;
+    width: 600px;
+    display: flex;
+    margin: auto;
+}
+
+#ecriture .author{
+    background-color: rgba(255,255,255,0.6);
+    width: 250px;
+    display: flex;
+    justify-content: center;
+}
+#ecriture .author p{
+    text-align: center;
+    color: white;
+}
+#ecriture .h-m-s{
+    flex: 2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(255,255,255,0.2);
+    color: white;
+}
+
+#ecriture .h-m-s .section{
+    width: 70px;
+    height: 50px;
+    border: 1px white solid;
+    font-size: 40px;
+    text-align: center;
+    margin: 0;
+}
+
+#ecriture .h-m-s .H{
+    color: rgb(208,255,85);
+}
+#ecriture .h-m-s .M{
+    color: rgb(0,211,255);
+}
+#ecriture .h-m-s .S{
+    color: rgb(64, 128, 255);
+}
+
+/* @media only screen and (max-width: 600px){
+    #ecriture{
+        width: 95vw;
+        margin-left: 5vw;
+    }
+} */
