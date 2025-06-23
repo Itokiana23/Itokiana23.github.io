@@ -1,4 +1,2 @@
-+------------------------------------------------+<br>
-|                HORLOGE-JS                      |<br>
-|     Author : NOMENIAVO Hasiniaina Itokiana     |<br>
-+------------------------------------------------+
+HORLOGE-JS
+Author : NOMENIAVO Hasiniaina Itokiana
